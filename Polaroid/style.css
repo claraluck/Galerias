@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    font-family: 'Indie Flower';
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/madeira.jpg);
+    background-position: relative;
+}
+
+.conteiner {
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 0px;
+}
+.conteiner>div {
+    border: rgb(235, 235, 235) solid;
+    border-width: 10px 10px 40px 10px;
+    background-position: center;
+    transition: transform 0.5s;
+}
+.polaroid { 
+    grid-area: 2 / 6 / 4 / 9; 
+    background-image: url(img/lis1.jpg);
+    transform:  rotate(3deg);  
+    box-shadow: 0px 10px 10px -4px #000000b2;
+}
+.polaroid:hover {
+    transform: rotate(-7deg); 
+}
+.polaroid:before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 180px;
+    background-color: rgba(128, 128, 128, 0.404);
+    transform: rotate(-40deg);
+    top: 3px;
+    left: -55px;
+
+}
+figcaption {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translateY(30px);
+
+}
+.polaroid2 { 
+    grid-area: 5 / 7 / 7 / 10; 
+    background-image: url(img/lis222.jpg);
+    transform:  rotate(-1deg);
+    box-shadow: 5px 7px 10px  #000000b9;
+}
+.polaroid2:hover {
+    transform: rotate(9deg);  
+}
+.polaroid2:before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 160px;
+    background-color: rgba(128, 128, 128, 0.404);
+    transform: rotate(80deg);
+    top: -16px;
+    left: 5px;
+}
+
+.polaroid3 { 
+    grid-area: 2 / 10 / 4 / 13; 
+    background-image: url(img/lis31.jpg);
+    transform: rotate(-10deg);
+    box-shadow: 8px 8px 9px  #0000009a;
+}
+.polaroid3:hover {
+    transform: rotate(-2deg);  
+}
+.polaroid3:before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 140px;
+    background-color: rgba(128, 128, 128, 0.404);
+    transform: rotate(60deg);
+    top: -1px;
+    left: 80px;
+}
+.polaroid4 { 
+    grid-area: 5 / 4 / 8 / 6; 
+    background-image: url(img/lis5.jpg);
+    transform: rotate(7deg);
+    box-shadow: -5px 9px 10px  #0000009d;
+}
+.polaroid4:before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 160px;
+    background-color: rgba(128, 128, 128, 0.404);
+    transform: rotate(-67deg);
+    left: -70px;
+}
+.polaroid4:hover {
+    transform: rotate(12deg);  
+}
+.polaroid5 { 
+    grid-area: 2 / 3 / 4 / 5;
+    background-image: url(img/lis4.jpg); 
+    transform:  rotate(12deg);
+    box-shadow: -2px 9px 10px  #000000a4;
+}
+.polaroid5:hover {
+    transform: rotate(4deg);  
+}
+.polaroid5:before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 160px;
+    background-color: rgba(128, 128, 128, 0.404);
+    transform: rotate(80deg);
+    top: -16px;
+    left: 5px;
+}
+.polaroid6 {
+    grid-area: 5 / 11 / 8 / 13;
+    background-image: url(img/lis6.jpg); 
+    transform: rotate(-3deg);
+    box-shadow: 7px 11px 10px  #000000c2;
+}
+.polaroid6:hover {
+    transform: rotate(4deg);  
+}
+.polaroid6:before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 160px;
+    background-color: rgba(128, 128, 128, 0.404);
+    transform: rotate(80deg);
+    top: -16px;
+    left: 5px;
+}
